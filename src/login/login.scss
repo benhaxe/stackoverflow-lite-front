@@ -1,0 +1,63 @@
+body {
+    background: url('../assets/images/bg.jpeg')
+}
+
+.login-form {
+    display: flex;
+    width: 30rem;
+    margin: 10rem auto;
+    justify-content: center;
+    padding: 0.5rem;
+    padding-top: 10rem;
+    background: #654c8c;
+    box-shadow: 0 0 1px 3px #C700E7;
+    position: relative;
+    border-radius: 1rem;
+    .thumbnail-placeholder {
+        height: 200px;
+        width: 200px;
+        background: skyblue;
+        position: absolute;
+        top: -7rem;
+        border-radius: 100%;
+        border: #C700E7 3px solid;
+    }
+    .input-checkbox-container {
+        color: white;
+        font-size: 15px;
+        font-family: sans-serif;
+        padding-bottom: 1rem;
+    }
+    .submit-btn-container {
+        display: flex;
+        justify-content: center;
+        .btn {
+            border: none;
+            padding: 1rem 3rem;
+            border-radius: 3rem;
+            background: #fc3aff;
+            color: white;
+            outline: none;
+            font-size: 14pt;
+            &:hover {
+                background: #d337d6
+            }
+        }
+    }
+    .input-container {
+        padding-bottom: 1.5rem;
+        &:nth-child(2) {
+            padding-bottom: 1rem;
+        }
+        input {
+            padding: 0.5rem 1rem;
+            width: 15rem;
+            border-radius: 5px;
+            border: none;
+            &::placeholder {
+                font-size: 12pt;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
